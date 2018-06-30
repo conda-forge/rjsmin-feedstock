@@ -12,14 +12,15 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - python
     - setuptools
-    - toolchain
   run:
     - python
 
@@ -36,7 +37,7 @@ about:
   summary: 'Fast javascript minifier for Python'
   description: |
     rJSmin is a javascript minifier written in python. The minifier is based on the semantics of jsmin.c by Douglas Crockford.
-    The module is a re-implementation aiming for speed, so it can be used at runtime (rather than during a preprocessing step). 
+    The module is a re-implementation aiming for speed, so it can be used at runtime (rather than during a preprocessing step).
   doc_url: http://opensource.perlig.de/rjsmin/doc-1.0/index.html
   dev_url: https://github.com/ndparker/rjsmin
 
