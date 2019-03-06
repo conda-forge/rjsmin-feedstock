@@ -1,6 +1,6 @@
 {% set name = "rjsmin" %}
-{% set version = "1.0.12" %}
-{% set sha256 = "dd9591aa73500b08b7db24367f8d32c6470021f39d5ab4e50c7c02e4401386f1" %}
+{% set version = "1.1.0" %}
+{% set sha256 = "b15dc75c71f65d9493a8c7fa233fdcec823e3f1b88ad84a843ffef49b338ac32" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1001
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
