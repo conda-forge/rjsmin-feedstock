@@ -1,5 +1,5 @@
 {% set name = "rjsmin" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rjsmin-{{ version }}.tar.gz
-  sha256: b15dc75c71f65d9493a8c7fa233fdcec823e3f1b88ad84a843ffef49b338ac32
+  sha256: 6c529feb6c400984452494c52dd9fdf59185afeacca2afc5174a28ab37751a1b
 
 build:
   number: 0
@@ -37,7 +37,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Fast javascript minifier for Python'
+  summary: Fast javascript minifier for Python
   description: |
     rJSmin is a javascript minifier written in python. The minifier is based on the semantics of jsmin.c by Douglas Crockford.
     The module is a re-implementation aiming for speed, so it can be used at runtime (rather than during a preprocessing step).
