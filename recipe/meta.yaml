@@ -26,7 +26,6 @@ requirements:
 test:
   imports:
     - rjsmin
-    - _rjsmin
   commands:
     - pip check
   requires:
@@ -37,10 +36,8 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Fast javascript minifier for Python'
-  description: |
-    rJSmin is a javascript minifier written in python. The minifier is based on the semantics of jsmin.c by Douglas Crockford.
-    The module is a re-implementation aiming for speed, so it can be used at runtime (rather than during a preprocessing step).
+  summary: Fast javascript minifier for Python
+  description: rJSmin is a javascript minifier written in python. The minifier is based on the semantics of jsmin.c by Douglas Crockford.
   doc_url: http://opensource.perlig.de/rjsmin/doc-1.0/index.html
   dev_url: https://github.com/ndparker/rjsmin
 
