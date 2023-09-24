@@ -36,10 +36,6 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: Fast javascript minifier for Python
-  description: rJSmin is a javascript minifier written in python. The minifier is based on the semantics of jsmin.c by Douglas Crockford.
-  doc_url: http://opensource.perlig.de/rjsmin/doc-1.0/index.html
-  dev_url: https://github.com/ndparker/rjsmin
 
 extra:
   recipe-maintainers:
