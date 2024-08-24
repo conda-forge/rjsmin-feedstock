@@ -10,9 +10,9 @@ source:
   sha256: 8c1bcd821143fecf23242012b55e13610840a839cd467b358f16359010d62dae
 
 build:
-  noarch: python
+  noarch: generic
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -21,6 +21,7 @@ requirements:
   host:
     - python >=3.8
     - pip
+    - setuptools
   run:
     - python >=3.8
 
