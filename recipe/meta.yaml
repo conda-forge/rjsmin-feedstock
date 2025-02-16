@@ -1,13 +1,13 @@
 {% set name = "rjsmin" %}
-{% set version = "1.2.3" %}
+{% set version = "1.2.4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rjsmin-{{ version }}.tar.gz
-  sha256: 1388b52493a4c04fbc970a2d757c301fa05a3c37640314c2ce9dfc8d8a730cc6
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/rjsmin-{{ version }}.tar.gz
+  sha256: ffcbe04e0dfac39cea8fbbcb41c38b2e07235ce2188bca15e998da1d348a7860
 
 build:
   noarch: generic
